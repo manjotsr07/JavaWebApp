@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Question_04</title>
+</head>
+<body>
+	<h1>Question 04: </h1>
+	<p th:text="'Username: ' + ${session.participant1.getName()}"></p>
+	<p th:text="'Question: ' + ${session.question4.getQuestion()}"></p>
+	<form action="#" th:action="@{/Answer4}" method="post">
+		Answer: <input type="text" th:name="answer4" /><br/>
+		<input type="submit" value="Submit" />
+		<input type="reset" value="Reset" />
+	</form>
+</body>
+</html>

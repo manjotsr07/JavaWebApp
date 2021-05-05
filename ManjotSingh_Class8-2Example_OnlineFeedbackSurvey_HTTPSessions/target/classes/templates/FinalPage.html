@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Final_Page</title>
+</head>
+<body>
+	<h1>Feedback Successfully Submitted</h1>
+	<p th:text="'Thanks ' + ${session.participant1.getName() + ', for the feedback.'}"></p>
+	<p>Your Responses:</p>
+	<p th:text="'Question 1: ' + ${session.question1.getQuestion()}"></p>
+	<p th:text="'Answer: ' + ${session.question1.getAnswer()}"></p><br/>
+
+	<p th:text="'Question 2: ' + ${session.question2.getQuestion()}"></p>
+	<p th:text="'Answer: ' + ${session.question2.getAnswer()}"></p><br/>
+	
+	<p th:text="'Question 3: ' + ${session.question3.getQuestion()}"></p>
+	<p th:text="'Answer: ' + ${session.question3.getAnswer()}"></p><br/>
+	
+	<p th:text="'Question 4: ' + ${session.question4.getQuestion()}"></p>
+	<p th:text="'Answer: ' + ${session.question4.getAnswer()}"></p><br/>
+	
+	<p><a th:href="@{/home}">Click here</a> to go to the home page.</p>
+</body>
+</html>
