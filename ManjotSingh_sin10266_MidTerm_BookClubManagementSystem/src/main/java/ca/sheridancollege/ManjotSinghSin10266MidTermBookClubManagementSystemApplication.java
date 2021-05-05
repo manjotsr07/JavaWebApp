@@ -1,8 +1,5 @@
 /*
  * Student Name: Manjot Singh
- * Student ID: 991589197
- * Professor: Dr. Muhammad Shafique
- * Date: 21 October 2020
  */
 
 package ca.sheridancollege;
