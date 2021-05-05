@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Delete_Book_Information</title>
+</head>
+<body>
+	<h1>Deleting Book Information:</h1>
+	<p><i>Please fill all of the following details.</i></p>
+	<form action="#" th:action="@{/deleteBookInformation}" method="post">
+		<table>
+		<tr><td>Book Author Name: </td> <td><input type="text" th:name="authorName" /></td></tr>
+		<tr><td><input type="submit" value="Submit" /></td> <td><input type="reset" value="Reset" /></td></tr>
+		</table>
+	</form>
+	<p><a th:href="@{/home}">Click here</a> to go to the home page.</p>
+</body>
+</html>

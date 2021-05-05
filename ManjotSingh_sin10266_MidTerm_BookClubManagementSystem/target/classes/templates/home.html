@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"> 
+<head>
+<meta charset="ISO-8859-1">
+<title>Book_Club_Management_System_Home_Page</title>
+</head>
+<body>
+	<h1>Book Club Management System</h1>
+	<p>This web application is used to make a book collection by adding books in the h2 database table and then 
+	deleting, updating and viewing the list.</p>
+	<p><a th:href="@{/addNewBook}">Click here</a> to add new book.</p>
+	<p><a th:href="@{/viewBookList}">Click here</a> to view the book list.</p>
+	<p><a th:href="@{/deleteBookInformation}">Click here</a> to delete book information.</p>
+	<p><a th:href="@{/borrowBook}">Click here</a> to borrow available books.</p>
+</body>
+</html>
